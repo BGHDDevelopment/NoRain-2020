@@ -4,11 +4,11 @@ import java.io.*;
 
 public class UpdateChecker
 {
-    public MainNoRain plugin;
+    public NoRain plugin;
     public String version;
     
     
-    public UpdateChecker(MainNoRain plugin) {
+    public UpdateChecker(NoRain plugin) {
         this.plugin = plugin;
         this.version = this.getLatestVersion();
     }
