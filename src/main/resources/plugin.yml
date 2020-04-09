@@ -1,0 +1,5 @@
+name: NoWeather
+version: ${project.version}
+main: me.noodles.norain.NoRain
+authors: [BGHDDevelopment]
+website: https://bghddevelopment.com/

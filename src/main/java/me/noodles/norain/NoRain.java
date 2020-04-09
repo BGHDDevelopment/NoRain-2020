@@ -5,13 +5,13 @@ import org.bukkit.event.*;
 import org.bukkit.plugin.*;
 import org.bukkit.*;
 
-public class MainNoRain extends JavaPlugin implements Listener
+public class NoRain extends JavaPlugin implements Listener
 {
-    public static MainNoRain plugin;
+    public static NoRain plugin;
     private UpdateChecker checker;
     
     public void onEnable() {
-        MainNoRain.plugin = this;
+        NoRain.plugin = this;
         final PluginDescriptionFile VarUtilType = this.getDescription();
         this.getLogger().info("NoWeather V" + VarUtilType.getVersion() + " starting...");
         this.saveDefaultConfig();
@@ -27,7 +27,7 @@ public class MainNoRain extends JavaPlugin implements Listener
                 getServer().getConsoleSender().sendMessage("------------------------");
                 getServer().getConsoleSender().sendMessage("No Weather is outdated!");
                 getServer().getConsoleSender().sendMessage("Newest version: " + this.checker.getLatestVersion());
-                getServer().getConsoleSender().sendMessage("Your version: " + MainNoRain.plugin.getDescription().getVersion());
+                getServer().getConsoleSender().sendMessage("Your version: " + NoRain.plugin.getDescription().getVersion());
                 getServer().getConsoleSender().sendMessage("Please Update Here: https://www.spigotmc.org/resources/46407");
                 getServer().getConsoleSender().sendMessage("------------------------");
             }
@@ -45,8 +45,8 @@ public class MainNoRain extends JavaPlugin implements Listener
     }
     
     @SuppressWarnings({ "unchecked", "rawtypes"})
-	public static MainNoRain getPlugin() {
-        return (MainNoRain)getPlugin((Class)MainNoRain.class);
+	public static NoRain getPlugin() {
+        return (NoRain)getPlugin((Class) NoRain.class);
     }
     
 }
