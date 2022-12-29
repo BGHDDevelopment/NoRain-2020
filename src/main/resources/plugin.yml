@@ -1,5 +1,5 @@
 name: NoWeather
-version: ${project.version}
-main: me.noodles.norain.NoRain
-authors: [BGHDDevelopment]
+version: 0.3
+main: com.bghddevelopment.weather.NoWeather
+author: BGHDDevelopmentLLC
 website: https://bghddevelopment.com/
